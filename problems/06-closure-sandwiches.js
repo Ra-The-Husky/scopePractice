@@ -17,8 +17,19 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 
-// Your code here
+const sandwichMaker = () => {
+  let startingString = "One sandwich with tomato";
 
+  const sandwich = (ingredient) => {
+    startingString += " and " + ingredient
+    return startingString
+  }
+  return sandwich
+}
+let sandwich = sandwichMaker(); // => returns a function
+console.log(sandwich("spinach")) // => "One sandwich with tomato and spinach"
+console.log(sandwich("jelly")) // => "One sandwich with tomato and spinach and jelly"
+console.log(sandwich("bread")) // => "One sandwich with tomato and spinach and jelly and bread
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
