@@ -11,8 +11,7 @@ arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 45
 arrowRestSum(0); // => 0
 ***********************************************************************/
 
-const arrowRestSum = (...nums) => nums.reduce((acc, num) => num + acc
-
+const arrowRestSum = (...nums) => nums.reduce((acc, num) => num + acc);
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
