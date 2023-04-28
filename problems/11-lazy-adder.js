@@ -22,8 +22,19 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   fat-arrow function
 ***********************************************************************/
 
-// Your code here
+const lazyAdder = (first) => {
+  return (second) => {
+    return (third) => {
+      return first + second + third
+    }
+  }
+}
 
+
+let firstAdd = lazyAdder(1);
+let secondAdd = firstAdd(2);
+let sum = secondAdd(3);
+console.log(sum); // prints 6
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
