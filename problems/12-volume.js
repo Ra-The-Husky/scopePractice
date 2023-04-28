@@ -13,7 +13,14 @@ function returned by recVolume should continue to return the original volume.
 
 ***********************************************************************/
 
-// Your code here
+const recVolume = (height) => {
+  return (...nums) => {
+    if (nums === 3) {
+      return height *= nums;
+    }
+  };
+  return nums;
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
